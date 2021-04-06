@@ -80,8 +80,8 @@ def build_effective_susc_stripe(xmin,xmax,ymin,ymax,stripe_width,cellsize,crust_
     ZZ = np.ones(XX.shape) * plotting_model * conversion_factor
 
     # insert stripe
-    stripe_max = ((ymax-ymin)/2) + stripe_width/2
-    stripe_min = ((ymax-ymin)/2) - stripe_width/2
+    stripe_max = ((ymax+ymin)/2) + stripe_width/2
+    stripe_min = ((ymax+ymin)/2) - stripe_width/2
     ZZ[YY>stripe_max] = -plotting_model * conversion_factor
     ZZ[YY<stripe_min] = -plotting_model * conversion_factor
 
