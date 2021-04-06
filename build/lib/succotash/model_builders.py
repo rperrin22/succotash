@@ -16,4 +16,4 @@ def build_dipping_plate(xmin,xmax,ymin,ymax,cellsize,xhinge,horizon_dip,z_base):
     # output the file
     outputfilename = 'basement_surface_%d_degrees.csv' % horizon_dip
     hdr = 'x-lims %d %d, y-lims %d %d, cellsize %d, xhinge %d, dip %d, z_base %d' % (xmin,xmax,ymin,ymax,cellsize,xhinge,horizon_dip,z_base)
-    np.savetxt(outputfilename,ZZ,delimiter=",",header=hdr)
+    np.savetxt(outputfilename,ZZ,delimiter=",",header=hdr,fmt='%.5f')
