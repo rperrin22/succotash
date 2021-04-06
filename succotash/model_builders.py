@@ -43,7 +43,8 @@ def build_effective_susc_uniform(xmin,xmax,ymin,ymax,cellsize,crust_susc,rem_inc
     plotting_model = np.sqrt(np.sum(plotting_model, axis=1) ** 2)
 
     # populate zmesh
-    ZZ = np.ones(XX.shape) * plotting_model
+    conversion_factor = 79617.8 # convert to ucgs
+    ZZ = np.ones(XX.shape) * plotting_model * conversion_factor
 
     # output the file
     outputfilename = 'basement_susceptibility_%d.csv' % rem_susc
