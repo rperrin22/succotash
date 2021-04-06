@@ -4,8 +4,8 @@ def build_dipping_plate(xmin,xmax,ymin,ymax,cellsize,xhinge,horizon_dip,z_base):
     import numpy as np 
     
     # create x-y mesh
-    xvec = np.linspace(xmin,xmax,int((xmax+dxdy-xmin)/dxdy))
-    yvec = np.linspace(ymin,ymax,int((ymax+dxdy-ymin)/dxdy))
+    xvec = np.linspace(xmin,xmax,int((xmax+cellsize-xmin)/cellsize))
+    yvec = np.linspace(ymin,ymax,int((ymax+cellsize-ymin)/cellsize))
     XX,YY = np.meshgrid(xvec,yvec)
 
     # build z-surface
