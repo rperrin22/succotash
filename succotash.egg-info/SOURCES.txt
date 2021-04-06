@@ -1,0 +1,8 @@
+README.md
+setup.py
+succotash/__init__.py
+succotash/model_builders.py
+succotash.egg-info/PKG-INFO
+succotash.egg-info/SOURCES.txt
+succotash.egg-info/dependency_links.txt
+succotash.egg-info/top_level.txt
