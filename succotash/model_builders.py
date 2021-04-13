@@ -1,3 +1,7 @@
+import numpy as np
+from discretize.utils import mkvc, refine_tree_xyz
+from SimPEG.utils import plot2Ddata, model_builder, surface2ind_topo, mat_utils
+
 def build_dipping_plate(xmin,xmax,ymin,ymax,cellsize,xhinge,horizon_dip,z_base):
     # some nifty description about this function
 
@@ -20,9 +24,9 @@ def build_dipping_plate(xmin,xmax,ymin,ymax,cellsize,xhinge,horizon_dip,z_base):
 
 def build_effective_susc_uniform(xmin,xmax,ymin,ymax,cellsize,crust_susc,rem_inc,rem_dec,rem_susc,field_inc,field_dec):
 
-    import numpy as np
-    from discretize.utils import mkvc, refine_tree_xyz
-    from SimPEG.utils import plot2Ddata, model_builder, surface2ind_topo, mat_utils
+    #import numpy as np
+    #from discretize.utils import mkvc, refine_tree_xyz
+    #from SimPEG.utils import plot2Ddata, model_builder, surface2ind_topo, mat_utils
 
      # create x-y mesh
     xvec = np.linspace(xmin,xmax,int((xmax+cellsize-xmin)/cellsize))
@@ -53,9 +57,9 @@ def build_effective_susc_uniform(xmin,xmax,ymin,ymax,cellsize,crust_susc,rem_inc
 
 def build_effective_susc_stripe(xmin,xmax,ymin,ymax,stripe_width,cellsize,crust_susc,rem_inc,rem_dec,rem_susc,field_inc,field_dec):
 
-    import numpy as np
-    from discretize.utils import mkvc, refine_tree_xyz
-    from SimPEG.utils import plot2Ddata, model_builder, surface2ind_topo, mat_utils
+    #import numpy as np
+    #from discretize.utils import mkvc, refine_tree_xyz
+    #from SimPEG.utils import plot2Ddata, model_builder, surface2ind_topo, mat_utils
 
      # create x-y mesh
     xvec = np.linspace(xmin,xmax,int((xmax+cellsize-xmin)/cellsize))
@@ -92,9 +96,9 @@ def build_effective_susc_stripe(xmin,xmax,ymin,ymax,stripe_width,cellsize,crust_
 
 def build_effective_susc_stripe3(xmin,xmax,ymin,ymax,stripe_width,cellsize,crust_susc,rem_inc,rem_dec,rem_susc,field_inc,field_dec):
 
-    import numpy as np
-    from discretize.utils import mkvc, refine_tree_xyz
-    from SimPEG.utils import plot2Ddata, model_builder, surface2ind_topo, mat_utils
+    #import numpy as np
+    #from discretize.utils import mkvc, refine_tree_xyz
+    #from SimPEG.utils import plot2Ddata, model_builder, surface2ind_topo, mat_utils
 
      # create x-y mesh
     xvec = np.linspace(xmin,xmax,int((xmax+cellsize-xmin)/cellsize))
