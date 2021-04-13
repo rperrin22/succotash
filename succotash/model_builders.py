@@ -135,6 +135,6 @@ def build_effective_susc_stripe3(xmin,xmax,ymin,ymax,stripe_width,cellsize,crust
     hdr = 'x-lims %d %d, y-lims %d %d, cellsize %d, stripe_width %d,crust-susceptibility %.2f, field-inc %.2f, field-dec %.2f, rem-susceptibility %.2f, rem-inc %.2f, rem-dec %.2f' % (xmin,xmax,ymin,ymax,cellsize,stripe_width,crust_susc,field_inc,field_dec,rem_susc,rem_inc,rem_dec)
     np.savetxt(outputfilename,ZZ,delimiter=",",header=hdr,fmt='%.3f')
 
-    def test_print(x):
-        for i in range(0,x):
-            print('hello world %d' % i)
+def test_print(x):
+    for i in range(0,x):
+        print('hello world %d' % i)

@@ -137,4 +137,4 @@ def build_effective_susc_stripe3(xmin,xmax,ymin,ymax,stripe_width,cellsize,crust
 
     def test_print(x):
         for i in range(0,x):
-            print('hello world')
+            print('hello world %d' % i)
